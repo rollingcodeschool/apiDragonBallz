@@ -26,14 +26,14 @@ function App() {
   };
 
   const personajeAleatorio = ()=>{
-      return Math.floor(Math.random() * (40 - 1 + 1) + 1);
+      return Math.floor(Math.random() * (58 - 1 + 1) + 1);
   }
 
   return (
     <main className="container my-5 text-center">
       <img src={logo} alt="logo de dragon ball z" className="w-50 mb-4" />
       <Personaje datoPersonaje={datoPersonaje}></Personaje>
-      <Button variant="danger" className="mt-4">
+      <Button variant="danger" className="mt-4" onClick={consultaAPI}>
         Obtener personaje
       </Button>
     </main>
